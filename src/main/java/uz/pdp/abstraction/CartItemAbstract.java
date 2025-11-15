@@ -1,6 +1,7 @@
 package uz.pdp.abstraction;
 
 import lombok.RequiredArgsConstructor;
+import lombok.Setter;
 import uz.pdp.exception.InvalidCartException;
 import uz.pdp.function.CheckedBiConsumer;
 import uz.pdp.model.Cart;
@@ -14,6 +15,8 @@ import java.util.UUID;
 @RequiredArgsConstructor
 public final class CartItemAbstract {
     private final Cart cart;
+    @Setter
+    private List<Item> items;
 
     public void addItemToCart(Product product, int quantity) throws IllegalArgumentException {
         UUID productId = product.getId();
@@ -34,8 +37,9 @@ public final class CartItemAbstract {
 
     public void buyItemsInCart(CheckedBiConsumer<UUID, Integer> purchaseProductsByItemInfo)
             throws InvalidCartException, IOException {
-        List<Item> items = cart.getItems();
-        if (items == null || items.isEmpty()) {
+        List<Item> cartItems = cart.getItems();
+        if (cartItems == null || cartItems.isEmpty()) {
+
             throw new InvalidCartException("Cart is empty, cannot proceed with purchase.");
         }
 
