@@ -1,0 +1,33 @@
+Index: src/main/java/uz/pdp/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package uz.pdp;\r\n\r\nimport uz.pdp.model.Order;\r\nimport uz.pdp.model.User;\r\nimport uz.pdp.renderer.OrderRenderer;\r\nimport uz.pdp.service.OrderService;\r\nimport uz.pdp.service.UserService;\r\n\r\nimport java.util.ArrayList;\r\nimport java.util.List;\r\nimport java.util.UUID;\r\n\r\npublic class Main {\r\n    public static void main(String[] args) throws Exception {\r\n\r\n\r\n        OrderService orderService = new OrderService();\r\n        System.out.println(OrderRenderer.render(orderService.getAll()));\r\n    }\r\n}
+===================================================================
+diff --git a/src/main/java/uz/pdp/Main.java b/src/main/java/uz/pdp/Main.java
+--- a/src/main/java/uz/pdp/Main.java	(revision 41c1fb6860eb25bf4e2cd5d4f977cf5adc597ac5)
++++ b/src/main/java/uz/pdp/Main.java	(date 1750507127093)
+@@ -1,14 +1,9 @@
+ package uz.pdp;
+ 
+-import uz.pdp.model.Order;
+-import uz.pdp.model.User;
+ import uz.pdp.renderer.OrderRenderer;
+ import uz.pdp.service.OrderService;
+-import uz.pdp.service.UserService;
+ 
+-import java.util.ArrayList;
+-import java.util.List;
+-import java.util.UUID;
++import java.util.Date;
+ 
+ public class Main {
+     public static void main(String[] args) throws Exception {
+@@ -16,5 +11,7 @@
+ 
+         OrderService orderService = new OrderService();
+         System.out.println(OrderRenderer.render(orderService.getAll()));
++
++
+     }
+ }
+\ No newline at end of file

@@ -1,0 +1,66 @@
+Index: src/main/java/uz/pdp/data/orders.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>[ {\r\n  \"id\" : \"43ef428e-e9aa-4d28-975a-5411a501439f\",\r\n  \"active\" : true,\r\n  \"cartId\" : \"b5d3a6d6-100b-45d3-850d-4b2beb850f30\",\r\n  \"customer\" : {\r\n    \"id\" : \"ee66943f-26bf-44ea-bd60-6e4a8efa65d3\",\r\n    \"fullName\" : \"John Doe\",\r\n    \"username\" : \"john_doe\"\r\n  },\r\n  \"boughtItems\" : [ {\r\n    \"seller\" : {\r\n      \"id\" : \"c8907d84-78d5-4927-b269-a7ce92638ae0\",\r\n      \"fullName\" : \"Seller Seller\",\r\n      \"username\" : \"seller_se\"\r\n    },\r\n    \"productId\" : \"13b0b40c-9a7e-42a1-94f6-e240665f4a45\",\r\n    \"product\" : \"Bananas\",\r\n    \"amountBought\" : 40,\r\n    \"pricePerPsc\" : 12.5,\r\n    \"totalPaid\" : 500.0\r\n  }, {\r\n    \"seller\" : {\r\n      \"id\" : \"c8907d84-78d5-4927-b269-a7ce92638ae0\",\r\n      \"fullName\" : \"Seller Seller\",\r\n      \"username\" : \"seller_se\"\r\n    },\r\n    \"productId\" : \"d2ac33ed-89e5-4bf3-a800-569fe2828a9b\",\r\n    \"product\" : \"Cars\",\r\n    \"amountBought\" : 2,\r\n    \"pricePerPsc\" : 12000.0,\r\n    \"totalPaid\" : 24000.0\r\n  } ],\r\n  \"grandTotal\" : 24500.0\r\n} ]
+===================================================================
+diff --git a/src/main/java/uz/pdp/data/orders.json b/src/main/java/uz/pdp/data/orders.json
+--- a/src/main/java/uz/pdp/data/orders.json	(revision c2e61703b1185403cbf7751bb8e809052ce00a14)
++++ b/src/main/java/uz/pdp/data/orders.json	(date 1750346567960)
+@@ -31,4 +31,37 @@
+     "totalPaid" : 24000.0
+   } ],
+   "grandTotal" : 24500.0
++}, {
++  "id" : "b8ac27a0-5d11-4de9-8aa6-0975f1fe3ed4",
++  "active" : true,
++  "cartId" : "fbc1febe-4643-4787-abb2-c2cc8f8107b7",
++  "customer" : {
++    "id" : "7bf25f28-30d8-4908-a408-03f7508a7ed0",
++    "fullName" : "John Doe",
++    "username" : "john_doe"
++  },
++  "boughtItems" : [ {
++    "seller" : {
++      "id" : "5cba8417-e060-404c-adc6-8ea15e90e6d7",
++      "fullName" : "Seller Seller",
++      "username" : "seller_se"
++    },
++    "productId" : "7712c79d-da93-4734-95a5-b64e06a3108b",
++    "product" : "Bananas",
++    "amountBought" : 40,
++    "pricePerPsc" : 12.5,
++    "totalPaid" : 500.0
++  }, {
++    "seller" : {
++      "id" : "5cba8417-e060-404c-adc6-8ea15e90e6d7",
++      "fullName" : "Seller Seller",
++      "username" : "seller_se"
++    },
++    "productId" : "4af73fd8-6b39-4fa6-bd92-5d06c02968ea",
++    "product" : "Cars",
++    "amountBought" : 2,
++    "pricePerPsc" : 12000.0,
++    "totalPaid" : 24000.0
++  } ],
++  "grandTotal" : 24500.0
+ } ]
+\ No newline at end of file
+Index: .idea/material_theme_project_new.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"MaterialThemeProjectNewConfig\">\r\n    <option name=\"metadata\">\r\n      <MTProjectMetadataState>\r\n        <option name=\"userId\" value=\"-3bc9c6d0:19787ac804c:-7eb2\" />\r\n      </MTProjectMetadataState>\r\n    </option>\r\n  </component>\r\n</project>
+===================================================================
+diff --git a/.idea/material_theme_project_new.xml b/.idea/material_theme_project_new.xml
+--- a/.idea/material_theme_project_new.xml	(revision c2e61703b1185403cbf7751bb8e809052ce00a14)
++++ b/.idea/material_theme_project_new.xml	(date 1750343561967)
+@@ -3,7 +3,9 @@
+   <component name="MaterialThemeProjectNewConfig">
+     <option name="metadata">
+       <MTProjectMetadataState>
+-        <option name="userId" value="-3bc9c6d0:19787ac804c:-7eb2" />
++        <option name="migrated" value="true" />
++        <option name="pristineConfig" value="false" />
++        <option name="userId" value="63040ed3:194fd2e752f:-7ffe" />
+       </MTProjectMetadataState>
+     </option>
+   </component>
